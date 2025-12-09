@@ -1,0 +1,39 @@
+.footer{
+    margin-top: 350px ;
+}
+
+@media (max-width: 768px){
+    .navbar a {
+        font-size: 16px;
+    }    
+   
+    .footer{
+        text-align: center;
+        background: #4a4aff;
+        color: white;
+        padding: 15px;
+        font-size: 15px;
+        position: relative;
+        top:1000px
+        /* margin-top: 10px; */
+    }
+}
+
+@media (max-width: 480px){
+    .navbar a {
+        color: white;
+        text-decoration: none;
+    }    
+    .navbar a:hover {
+       color: #ffd700;
+    }
+    .footer{
+        text-align: center;
+        background: #4a4aff;
+        color: white;
+        padding: 15px;
+        font-size: 15px;
+        /* position: relative; */
+        /* top: 1000px; */
+    }
+}

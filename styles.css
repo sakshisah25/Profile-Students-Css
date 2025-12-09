@@ -1,0 +1,230 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background: #f5f6fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.header {
+  background: #4a4aff;
+  color: #fff;
+  padding: 20px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+
+
+.navbar a {
+  color: white;
+  margin-left: 18px;
+  text-decoration: none;
+  font-size: 20px;
+  }
+
+.navbar a:hover {
+  color: #ffd700;
+}
+
+
+.hero {
+  text-align: center;
+  background: linear-gradient(to right, #4a4aff, #8989ff);
+  color: white;
+}
+
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+ text-align: center;
+}
+
+.btn {
+  padding: 10px 25px;
+  background: white;
+  color: #4a4aff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffd700;
+  color: black;
+}
+
+
+section {
+  padding: 40px;
+}
+
+.about, .features, .updates {
+  background: white;
+  margin: 20px;
+  border-radius: 12px;
+   padding: 30px;
+}
+
+.features ul li {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.footer {
+  text-align: center;
+  background: #4a4aff;
+  color: white;
+  padding: 15px;
+  font-size: 15px;
+  position: relative;
+  margin-top: 50px;
+}
+
+
+
+
+.profile-container {
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+}
+
+.photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 15px 0;
+  border: 5px solid #4a4aff;
+}
+
+
+table {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table th {
+  background: #4a4aff;
+  color: white;
+  padding: 12px;
+}
+
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background: #f0f0ff;
+}
+
+
+.feedback-container {
+  width: 30%;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+
+.feedback-form button {
+  padding: 12px;
+  background: #4a4aff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  
+}
+
+.feedback-form button:hover {
+  background: gray;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact-info a {
+  color: #4a4aff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #ff9900;
+}
+
+
+@media (max-width: 780px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  table, .profile-container, .feedback-container, .contact-box {
+    width: 95%;
+  }
+}
+
+
+#bold{font-size: 20px;
+}
+
+.features, .about, .updates {
+  text-align: center;
+}
+
+.features ul{
+  display: inline-block;
+  text-align: left;
+}
+.card{
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.contact-box {
+  width: 55%;
+  margin: 40px auto;
+  text-align: center;
+  background: white;
+  padding: 55px;
+  border-radius: 15px;
+}

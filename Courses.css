@@ -1,0 +1,143 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.header {
+  background: #4a4aff;
+  color: #fff;
+  padding: 20px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+ 
+}
+.navbar a {
+  color: white;
+  margin-left: 18px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar a:hover {
+  color: #ffd700;
+}
+.footer{
+    position: relative;
+    top:115px
+  }
+.courses-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.courses-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.course-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.5s;
+  margin: 20px;
+  border-left: 5px solid #4a4aff;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+
+}
+
+.course-card h3 {
+  color: #4a4aff;
+  margin-bottom: 10px;
+}
+
+
+.courses-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* Desktop */
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 768px){
+    .courses-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }    
+    .navbar a:hover {
+       color: #ffd700;
+    }
+    .footer{
+        text-align: center;
+        background: #4a4aff;
+        color: white;
+        padding: 15px;
+        font-size: 15px;
+        position: relative;
+        margin-top: 100px;
+    }
+    .course-card {
+       background: white;
+       padding: 25px;
+       border-radius: 12px;
+       transition: 1s;
+       margin: 10px;
+       border-left: 5px solid #4a4aff;
+}
+}
+
+@media (max-width: 480px){
+    .courses-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .course-card {
+       background: white;
+       padding: 15px;
+       border-radius: 12px;
+       transition: 0.5s;
+       margin: 5px;
+       border-left: 5px solid #4a4aff;
+    }
+    .footer {
+      text-align: center;
+      background: #4a4aff;
+      color: white;
+      padding: 15px;
+      font-size: 15px;
+      position: relative;
+      top:200px;
+}
+}
+.footer {
+  text-align: center;
+  background: #4a4aff;
+  color: white;
+  padding: 15px;
+  font-size: 15px;
+  margin-top: 50px;
+}
